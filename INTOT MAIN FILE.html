@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            align-items: center;
+        }
+
+        .part_a {
+            background-color: #c4d70f;
+            clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+
+        }
+
+        .sub {
+            padding: 10Px;
+            font-size: larger;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sub_a {
+            margin-left: 75%;
+            color: white;
+            font-size: 20Px;
+
+        }
+
+        .monty {
+            display: flex;
+            text-align: justify;
+            color: white;
+            background-color: #c4d70f;
+        }
+
+        .none {
+            margin-top: 5%;
+        }
+
+        #b {
+            color: #fff;
+        }
+
+        #z {
+            color: black;
+        }
+
+        #j {
+            color: white;
+            text-align: justify;
+        }
+
+        #h {
+            border-radius: 15px;
+            background-color: #c4d70f;
+            color: white;
+            font-size: larger;
+            border-color: white;
+            width: 150Px;
+
+        }
+
+        #h:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .sub_e {
+            margin-left: 600Px;
+            background-color: white;
+
+        }
+
+        .part_b {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+
+        }
+
+        .wrapper {
+            margin-top: 10%;
+        }
+
+
+        .team {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .team .team_member {
+            background: #fff;
+            margin: 5px;
+            margin-bottom: 50px;
+            width: 300px;
+            padding: 20px;
+            line-height: 20px;
+            position: relative;
+        }
+
+        .team .team_member h3 {
+            color: #c4d70f;
+            font-size: 26px;
+            margin-top: 50px;
+        }
+
+        .part-c {
+            margin-top: 0%;
+        }
+
+        .button {
+            border-radius: 15px;
+            background-color: white;
+            color: #c4d70f;
+            font-size: larger;
+            border-color: #c4d70f;
+            width: 150Px;
+
+        }
+
+        .button:hover {
+            background-color: #c4d70f;
+            color: white;
+        }
+
+        #p {
+            margin-left: 280px;
+        }
+
+        #o {
+            margin-left: 160px;
+        }
+
+        #i {
+            margin-left: 170px;
+        }
+
+        .part_d {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #s {
+            margin-top: 50px;
+        }
+
+        .part_e {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .koli {
+            margin-top: 10%;
+        }
+
+        .team_a {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            text-align: center;
+            flex-wrap: wrap;
+            line-height: 20px;
+        }
+
+        h3 {
+            line-height: 30px;
+        }
+
+        .team_a .team_member_a {
+            background: #fff;
+            margin: 5px;
+            margin-bottom: 50px;
+            width: 300px;
+            padding: 20px;
+
+            position: relative;
+        }
+
+        .team .team_member h3 {
+            color: #81c644;
+            font-size: 26px;
+            margin-top: 50px;
+        }
+
+        .main {
+            text-align: center;
+            text-justify: auto;
+            margin-top: 20px;
+        }
+
+        #v {
+            color: lightgray;
+        }
+
+        .part_f {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .part_f p {
+            width: 85%;
+            margin: 35px auto 0 auto;
+        }
+
+        .form {
+            display: flex;
+        }
+
+        .content_form {
+            margin-top: 60px;
+            font-size: 0.5cm;
+            margin-left: 100px;
+
+
+        }
+
+        input[type=text] {
+            width: 535px;
+            padding: 12px 22px;
+            border-radius: 4px;
+            font-size: large;
+            box-sizing: border-box;
+
+        }
+
+        label {
+            font-size: 0.8cm;
+            line-height: 1.4cm;
+        }
+
+
+        #m {
+            border-radius: 15px;
+            background-color: white;
+            color: #c4d70f;
+            font-size: larger;
+            border-color: #c4d70f;
+            width: 150Px;
+            margin-left: 200px;
+
+
+        }
+
+        #m:hover {
+            background-color: #c4d70f;
+            color: white;
+        }
+
+        .main_footer {
+            content: "";
+            position: relative;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: -3px;
+            background-color: #191919;
+            clip-path: polygon(0 315px, 100% 0, 100% 100%, 0% 100%);
+            color: white;
+
+        }
+
+        .main_a {
+            margin-top: 25%;
+            display: flex;
+        }
+
+        .main_b {
+            margin-left: 50px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .main_c {
+            background: transparent;
+            color: white;
+            width: 500px;
+            font-size: large;
+            outline: 0;
+            border: 0;
+            border-bottom: 2px solid#9999;
+        }
+
+        #l {
+            color: white;
+            background-color: #c4d70f;
+            margin-top: 2%;
+            padding: 2px;
+
+        }
+
+        #l:hover {
+            background-color: white;
+            color: #c4d70f;
+        }
+
+        .footer_hr {
+            position: relative;
+            width: 55%;
+            margin: 0 auto;
+            background-color: #626262;
+        }
+
+        .footer_section {
+            background-color: #191919;
+            padding: 25px 20px;
+        }
+
+        .footer_section p {
+            color: #fefeff;
+            margin: 0;
+            text-align: center;
+        }
+
+        .footer_section a {
+            color: #fefeff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="part_a">
+        <div class="sub">
+            INTOT
+        </div>
+        <div class="sub_a">
+            <img style="margin-left:4%;" src="images\login.png" alt="login">Login
+            <img style="margin-left:3%;" src="images\signup.png" alt="signup">Sign Up
+            <img style="margin-left:2%;" src="images\search-icon.png" alt="search-icon">
+            <img style="margin-left:1%;" src="images\menu.png" alt="menu.png">
+        </div>
+        <div class="monty">
+            <div class="none" style="width:50% ;margin-left:8cm;">
+                <h1>
+                    <span id="b"> INNOVATIVE</span><br><span id="z">SOLUTION</span>
+                </h1>
+                <p id="j">We find the best solutions fot you,<br> we redesign your home and workbr
+                    places. <br> Discover why over 5,100 <br> home owners trust initiative</p> <br>
+                <input class="button" id="h" type="button" value="READ MORE">
+
+            </div>
+            <div style="width:50% ; margin-right:100px; ">
+                <img src="images\slider-img.png" alt="slider-img" width="721px" height="421px">
+            </div>
+        </div>
+
+    </div>
+    <div class="sub_e">
+        <img src="images\left-black-arrow.png" alt="left-black-arrow">
+        <img src="images\right-black-arrow.png" alt="right-black-arrow">
+    </div>
+
+    <div class="part_b">
+        <div class="bus">
+            <h1>WHY INITIATIVE COMPANY</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="team">
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images\card-img-1.png" alt="card-img-1">
+                </div>
+                <h3>10 YEARS EXPERIENCE</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images\card-img-2.png" alt="card-img-2">
+                </div>
+                <h3>A PRO ARCHITECTS TEAM</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+            <div class="team_member">
+                <div class="team_img">
+                    <img src="images\card-img-3.png" alt="card-img-3">
+                </div>
+                <h3>1000+ HAPPY CUSTOMERS</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="part_c">
+        <input class="button" id="p" type="button" value="Read More">
+        <input class="button" id="o" type="button" value="Read More">
+        <input class="button" id="i" type="button" value="Read More">
+    </div>
+
+    <div class="part_d">
+        <div class="man">
+            <h1>OUR PORTFOLIO</h1>
+            <P>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem</P>
+        </div>
+        <div class="man_1" id="s">
+            <img src="images\portfolio-img-1.png" alt="portfolio-img-1">
+            <img src="images\portfolio-img-2.jpg" alt="portfolio-img-2">
+            <img src="images\portfolio-img-3.png" alt="portfolio-img-3">
+            <img src="images\portfolio-img-4.png" alt="portfolio-img-4">
+        </div>
+    </div>
+
+    <div class="part_e">
+        <div class="van">
+            <h1>OUR TEAM</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable</p>
+        </div>
+    </div>
+
+    <div class="koli">
+        <div class="team_a">
+            <div class="team_member_a">
+                <div class="team_img_a">
+                    <img src="images\team-1.png" height="220px" width="220px" alt="team-1">
+                </div>
+                <h3>JOHN DOE</h3>
+                <p class="role">CEO - DESIGNER</p>
+                <p>Follow On</p>
+                <img src="images\facebook-logo-button.png" alt="facebook-logo-button">
+                <img src="images\twitter-logo-button.png" alt="twitter-logo-button">
+                <img src="images\linkedin.png" alt="linkedin">
+                <img src="images\instagram.png" alt="instagram">
+            </div>
+            <div class="team_member_a">
+                <div class="team_img_a">
+                    <img src="images\team-2.png" height="220px" width="220px" alt="team-2">
+                </div>
+                <h3>SANDY DOE</h3>
+                <p class="role">CEO - DESIGNER</p>
+                <p>Follow On</p>
+                <img src="images\facebook-logo-button.png" alt="facebook-logo-button">
+                <img src="images\twitter-logo-button.png" alt="twitter-logo-button">
+                <img src="images\linkedin.png" alt="linkedin">
+                <img src="images\instagram.png" alt="instagram">
+            </div>
+            <div class="team_member_a">
+                <div class="team_img_a">
+                    <img src="images\team-3.png" height="220px" width="220px" alt="team-3">
+                </div>
+                <h3>ALEX DOE</h3>
+                <p class="role">CEO - DESIGNER</p>
+                <p>Follow On</p>
+                <img src="images\facebook-logo-button.png" alt="facebook-logo-button">
+                <img src="images\twitter-logo-button.png" alt="twitter-logo-button">
+                <img src="images\linkedin.png" alt="linkedin">
+                <img src="images\instagram.png" alt="instagram">
+            </div>
+            <div class="team_member_a">
+                <div class="team_img_a">
+                    <img src="team-4.png" height="220px" width="220px" alt="team-4">
+                </div>
+                <h3>JOHN DOE</h3>
+                <p class="role">CEO - DESIGNER</p>
+                <p>Follow On</p>
+                <img src="images\facebook-logo-button.png" alt="facebook-logo-button">
+                <img src="images\twitter-logo-button.png" alt="twitter-logo-button">
+                <img src="images\linkedin.png" alt="linkedin">
+                <img src="images\instagram.png" alt="instagram">
+            </div>
+        </div>
+    </div>
+
+    <hr color="yellow" width="1280px" style="margin-left:30px;">
+
+    <div class="main">
+        <div class="member">
+            <p id="v">Don’t Hesitate To Ask</p>
+            <h1 id="x">FREE CONSULTATION</h1>
+        </div>
+    </div>
+    <div class="form">
+        <div class="content_form" style="width:50% ;">
+            <form action="#">
+                <label for="fname">Name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lmail">Email</label><br>
+                <input type="text" id="lmail" name="lmail"><br>
+                <label for="mno">Mobile Number</label><br>
+                <input type="text" id="mno" name="mno"><br>
+                <label for="cmessage">Message</label><br>
+                <textarea name="cmessage" id="cmessage" cols="30" rows="10" style="width:535px;"></textarea>
+                <span><input class="button" id="m" type="button" value="SEND"></span>
+            </form>
+        </div>
+        <div style="width:50% ;">
+            <img src="images\form-img.png" alt="" width="450px" height="581px">
+        </div>
+
+    </div>
+
+
+    <div class="part_f">
+        <h1>
+            WHY CHOOSE US?
+        </h1>
+        <div class="har">
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using LoremIt is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at its layout. The point of using Lorem
+            </p>
+        </div>
+    </div>
+
+
+    <div class="main_footer">
+        <div class="main_a">
+            <div style="width:29% ; margin-left: 5%;">
+                <h2 style="font-size: 0.8cm;">About Us</h2>
+                <p style="font-size: 0.5cm; line-height: 30px;">It is a long established <br>
+                    fact that a reader will be <br>
+                    distracted by the read <br>
+                    able LoremIt is a long <br>
+                    established fact that a <br>
+                    reader will be distracted
+                </p>
+            </div>
+            <div style="width:29% ; ">
+                <h2 style="font-size:0.8cm;">Contact Us</h2>
+                <p style="font-size: 0.5cm; line-height:30px ;">It is a long established <br>
+                    fact that a reader will be <br>
+                    distracted by the read <br>
+                    able LoremIt is a long <br>
+                    established fact that a <br>
+                    reader will be distracted
+                </p>
+            </div>
+            <div style="width:42% ;">
+                <img src="images\map.png" alt="" width="450px" height="289px">
+                <center>
+                    <div class="main_b">
+                        <a href="">
+                            <img src="images\fb.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="images\twitter.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="images\linkedin1.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="images\instagram1.png" alt="" />
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="main_b">
+            <form action="#">
+                <input class="main_c" type="text" placeholder="Enter Your Email"><br>
+                <span><input class="button" id="l" type="button" value="SUBSCRIBE"></span>
+            </form>
+        </div>
+    </div>
+
+    <section class="container-fluid footer_section">
+        <p>
+            2019 All Rights Reserved. Design by Free Html Templates
+        </p>
+    </section>
+
+</body>
+
+</html>
